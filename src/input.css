@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.neon-text {
+   color: transparent;
+   text-shadow: 
+   0 0 1px rgb(155, 96, 243),
+   0 0 1px rgb(200, 34, 255),
+   0 0 1px rgb(200, 34, 255);
+}
+.neon-border {
+   padding: 1px;
+   border-radius: 6px;
+   background: linear-gradient(to right, #6DC7FF, #1A6DFF, #C822FF, #E6ABFF);
+}
