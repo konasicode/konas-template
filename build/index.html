@@ -8,7 +8,7 @@
    <link rel="icon" type="image/png" href="./img/favicon.png">
 </head>
 <body class="min-h-screen text-base font-poppins bg-[#010a01]">
-   <header class="flex justify-center fixed top-0 left-0 z-10 py-2 w-full">
+   <header class="flex justify-center fixed top-0 left-0 z-20 py-2 w-full transparent-effect">
       <div class="container">
         <section class="flex justify-between items-center">
           <a href="/" class="flex items-center gap-2">
@@ -31,18 +31,38 @@
         </section>
       </div>
     </header>
-    <main class="flex flex-col justify-center gap-y-10">
-         <section class="container bg-[url('../img/bg.jpg')] bg-cover bg-center min-h-dvh text-indigo-300">
-            <div class="pt-32 flex flex-col items-center gap-y-10">
+    <main>
+         <section class="flex items-center flex-col bg-[url('../img/bg.jpg')] bg-cover bg-center min-h-dvh text-indigo-300 overlay relative w-full">
+            <div class="container">
+               <div class="pt-32 flex flex-col items-center z-10 relative">
+                  <div>
+                     <h1 class="text-7xl text-center">KONAS</h1>
+                     <h2 class="text-2xl pt-5 text-center">Студия web-дизайна</h2>
+                     <h3 class="text-2xl text-center">С нами о вашем бизнесе узнает весь Мир</h3>
+                  </div>
+                  <div class="flex gap-x-5 pt-10 text-2xl">
+                     <a class="w-[300px] text-center px-10 py-10 border-2 border-indigo-400 rounded-xl transparent-effect" href="">Лендинг пейдж</a>
+                     <a class="w-[300px]  text-center px-10 py-10 border-2 border-indigo-400 rounded-xl transparent-effect" href="">Мультистраничный сайт</a>
+                     <a class="w-[300px] text-center px-10 py-10 border-2 border-indigo-400 rounded-xl transparent-effect" href="">Интернет магазин</a>
+                  </div>
+                  <div class="neon-border mt-10">
+                     <a  class="bg-[#010a01] border rounded border-transparent p-[1px]" href="">Заказать сайт
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="container bg-[url('../img/bg.jpg')] bg-cover bg-center min-h-dvh text-indigo-300 overlay relative">
+            <div class="pt-32 flex flex-col items-center">
                <div>
                   <h1 class="text-7xl text-center">KONAS</h1>
                   <h2 class="text-2xl pt-5 text-center">Студия web-дизайна</h2>
                   <h3 class="text-2xl text-center">С нами о вашем бизнесе узнает весь Мир</h3>
                </div>
                <div class="flex gap-x-8 pt-10 text-2xl">
-                  <a class="w-[300px] text-center px-10 py-10 border-2 border-indigo-400 rounded-xl" href="">Лендинг пейдж</a>
-                  <a class="w-[300px] text-center px-10 py-10 border-2 border-indigo-400 rounded-xl" href="">Мультистраничный сайт</a>
-                  <a class="w-[300px] text-center px-10 py-10 border-2 border-indigo-400 rounded-xl" href="">Интернет магазин</a>
+                  <a class="w-[300px] text-center px-10 py-10 border-2 border-indigo-400 rounded-xl transparent-effect" href="">Лендинг пейдж</a>
+                  <a class="w-[300px] text-center px-10 py-10 border-2 border-indigo-400 rounded-xl transparent-effect" href="">Мультистраничный сайт</a>
+                  <a class="w-[300px] text-center px-10 py-10 border-2 border-indigo-400 rounded-xl transparent-effect" href="">Интернет магазин</a>
                </div>
                <div class="neon-border neon-text w-[286px] h-[48px] text-xl uppercase">
                   <a class="block bg-[#010a01] border rounded border-transparent p-[7px] text-center" href="">Заказать сайт
