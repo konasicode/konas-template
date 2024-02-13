@@ -6,102 +6,162 @@
 	<title>Konas</title>
 	<link rel="stylesheet" href="css/style.css">
    <link rel="icon" type="image/png" href="./img/favicon.png">
+   <script src="./js/index.js" defer></script>
 </head>
 <body class="min-h-screen text-base font-poppins bg-[#010a01]">
    <header class="flex justify-center fixed top-0 left-0 z-20 py-2 w-full transparent-effect">
       <div class="container">
-        <section class="flex justify-between items-center">
-          <a href="/" class="flex items-center gap-2">
+        <section id="main_section" class="relative flex justify-between items-center">
+          <a href="#main_section" class="flex items-center gap-2">
             <img class="max-h-[54px]" src="./img/logo.png" alt="logo"/>
-            <div class="neon-border">
-               <span class="neon-text text-2xl bg-[#010a01] border rounded border-transparent p-[1px]">KONAS</span>
-            </div>
+            <div class="neon-border text-2xl neon-text py-[2px] px-2">KONAS</div>
           </a>
           <nav class="flex space-x-8" aria-label="main">
             <a class="block bg-contain h-12 w-12 bg-[url('../img/whatsapp.png')]" href=""></a>
             <a class="block bg-contain h-12 w-12 bg-[url('../img/telegram.png')]" href=""></a>
             <a class="block bg-contain h-12 w-12 bg-[url('../img/email.png')]" href=""></a>
           </nav>
-          <nav class="neon-text uppercase space-x-5" aria-label="lang">
-            <a href="">en</a>
-            <a href="">ru</a>
-            <a href="">es</a>
-            <a href="">ua</a>
-          </nav>
+          <div id="lang-holder" class="neon-text uppercase neon-border p-2">ru</div>
+          <div id="lang-dropdown" class="hidden absolute right-0 bottom-[-144px]">
+            <nav class="flex flex-col neon-border uppercase neon-text text-center" aria-label="lang">
+               <a class="p-2 block leading-4" href="">en</a>
+               <a class="p-2 block leading-4" href="">ru</a>
+               <a class="p-2 block leading-4" href="">es</a>
+               <a class="p-2 block leading-4" href="">ua</a>
+            </nav>
+         </div>
         </section>
       </div>
     </header>
     <main>
-         <section class="flex items-center flex-col bg-[url('../img/bg.jpg')] bg-cover bg-center min-h-dvh text-indigo-300 overlay relative w-full">
+         <section class="flex items-center flex-col bg-[url('../img/bg.jpg')] bg-cover bg-center min-h-dvh text-indigo-200 overlay relative w-full pb-20">
             <div class="container">
-               <div class="pt-32 flex flex-col items-center z-10 relative">
+               <div class="pt-32 flex flex-col gap-y-20 items-center z-10 relative">
                   <div>
-                     <h1 class="text-7xl text-center">KONAS</h1>
-                     <h2 class="text-2xl pt-5 text-center">Студия web-дизайна</h2>
-                     <h3 class="text-2xl text-center">С нами о вашем бизнесе узнает весь Мир</h3>
+                     <h1 class="text-7xl text-center font-poppinsBold text-indigo-400">KONAS</h1>
+                     <h2 class="text-2xl pt-5 text-center font-poppinsSemiBold drop-shadow-2xl">Студия web-дизайна</h2>
+                     <h3 class="text-2xl text-center font-poppinsSemiBold">С нами о вашем бизнесе узнает весь Мир</h3>
                   </div>
-                  <div class="flex gap-x-5 pt-10 text-2xl">
-                     <a class="w-[300px] text-center px-10 py-10 border-2 border-indigo-400 rounded-xl transparent-effect" href="">Лендинг пейдж</a>
-                     <a class="w-[300px]  text-center px-10 py-10 border-2 border-indigo-400 rounded-xl transparent-effect" href="">Мультистраничный сайт</a>
-                     <a class="w-[300px] text-center px-10 py-10 border-2 border-indigo-400 rounded-xl transparent-effect" href="">Интернет магазин</a>
+                  <div id="site_var" class="flex gap-x-5 text-2xl">
+                     <a class="w-[300px] text-center px-10 py-10 border-2 border-indigo-400 rounded-xl transparent-effect" href="#landing_section">Лендинг пейдж</a>
+                     <a class="w-[300px]  text-center px-10 py-10 border-2 border-indigo-400 rounded-xl transparent-effect" href="#websites_section">Мультистраничный сайт</a>
+                     <a class="w-[300px] text-center px-10 py-10 border-2 border-indigo-400 rounded-xl transparent-effect" href="#stores_section">Интернет магазин</a>
                   </div>
-                  <div class="neon-border mt-10">
-                     <a  class="bg-[#010a01] border rounded border-transparent p-[1px]" href="">Заказать сайт
-                     </a>
-                  </div>
-               </div>
+                  <a class="block rounded py-3 text-center neon-border neon-text w-[286px] h-[48px] text-xl uppercase" href="#footer">Заказать сайт
+                  </a>
             </div>
          </section>
-         <section class="container bg-[url('../img/bg.jpg')] bg-cover bg-center min-h-dvh text-indigo-300 overlay relative">
-            <div class="pt-32 flex flex-col items-center">
-               <div>
-                  <h1 class="text-7xl text-center">KONAS</h1>
-                  <h2 class="text-2xl pt-5 text-center">Студия web-дизайна</h2>
-                  <h3 class="text-2xl text-center">С нами о вашем бизнесе узнает весь Мир</h3>
-               </div>
-               <div class="flex gap-x-8 pt-10 text-2xl">
-                  <a class="w-[300px] text-center px-10 py-10 border-2 border-indigo-400 rounded-xl transparent-effect" href="">Лендинг пейдж</a>
-                  <a class="w-[300px] text-center px-10 py-10 border-2 border-indigo-400 rounded-xl transparent-effect" href="">Мультистраничный сайт</a>
-                  <a class="w-[300px] text-center px-10 py-10 border-2 border-indigo-400 rounded-xl transparent-effect" href="">Интернет магазин</a>
-               </div>
-               <div class="neon-border neon-text w-[286px] h-[48px] text-xl uppercase">
-                  <a class="block bg-[#010a01] border rounded border-transparent p-[7px] text-center" href="">Заказать сайт
+         <section id="landing_section" class="flex justify-center pb-28">
+            <div class="container flex gap-x-5">
+               <div class="flex flex-col gap-y-10 items-center bg-indigo-200 pt-14 pb-10 text-center w-[896px] rounded-3xl">
+                  <h1 class="text-5xl text-center font-poppinsBold">Лендинг пейдж</h1>
+                  <p class="font-poppinsSemiBold text-lg text-balance">
+                     Одностраничные сайты создают для продвижения конкретной услуги или продажи товара. Здесь кратко, но ёмко описывается рекламируемый продукт, есть простая форма обратной связи. Организации делают одностраничник на заказ, чтобы сообщить о распродаже или скидках на услугу. Landing page (перевод с англ. «посадочная страница») сегодня считают одним из наиболее эффективных рекламных инструментов для малого и среднего бизнеса.
+                  </p>
+                  <div class="flex gap-x-28 text-xl">
+                     <span class="flex items-center bg-[url('../img/time.png')] bg-no-repeat pl-24 h-24">14 - 20 дней</span>
+                     <span class="flex items-center bg-[url('../img/coins.png')] bg-no-repeat pl-24  h-24">от 500$</span>
+                  </div>
+                  <a class="block rounded py-3 text-center neon-border neon-text w-[286px] h-[48px] text-xl uppercase" href="#footer">Заказать сайт
                   </a>
                </div>
-            </div>
-         </section>
-         <section class="bg-purple-200 flex">
-            <div class="w-[50%]">
-               <h1 class="font-poppinsBold text-center">Лендинг пейдж</h1>
-               <p>
-                  Одностраничные сайты создают для продвижения конкретной услуги или продажи товара. Здесь кратко, но ёмко описывается рекламируемый продукт, есть простая форма обратной связи. Организации делают одностраничник на заказ, чтобы сообщить о распродаже или скидках на услугу. Landing page (перевод с англ. «посадочная страница») сегодня считают одним из наиболее эффективных рекламных инструментов для малого и среднего бизнеса.
-               </p>
-               <div>
-                  <span><img src="" alt="">от 14 до 20 дней</span>
-                  <span><img src="" alt="">от 500$</span>
-               </div>
-            </div>
-            <div class="bg-indigo-900">
-               <div>
-                  <span>ВЫ УВИДИТЕ</span>
-                  <span>СТИЛЬНЫЙ ДИЗАЙН</span>
-                  <span>Вашей посадочной страницы</span>
-               </div>
-               <div>
-                  <span>ВЫ УСЛЫШИТЕ</span>
-                  <span>ВОСХИЩЕННЫЕ ОТЗЫВЫ</span>
-                  <span>Ваших клиентов и партнеров</span>
-               </div>
-               <div>
-                  <span>ВЫ ПОЧУВСТВУЕТЕ</span>
-                  <span>ВЫСОКУЮ ЭФФЕКТИВНОСТЬ</span>
-                  <span>работы Вашего лендинга</span>
+               <div class="bg-indigo-300 border rounded-3xl text-indigo-800 text-center w-[384px] flex flex-col gap-y-14">
+                  <div class="flex flex-col pt-14">
+                     <span class="text-3xl font-poppinsBold">ВЫ УВИДИТЕ</span>
+                     <span class="font-poppinsSemiBold">СТИЛЬНЫЙ ДИЗАЙН</span>
+                     <span>Вашей посадочной страницы</span>
+                  </div>
+                  <div class="flex flex-col">
+                     <span class="text-3xl font-poppinsBold">ВЫ УСЛЫШИТЕ</span>
+                     <span class="font-poppinsSemiBold">ВОСХИЩЕННЫЕ ОТЗЫВЫ</span>
+                     <span>Ваших клиентов и партнеров</span>
+                  </div>
+                  <div class="flex flex-col">
+                     <span class="text-3xl font-poppinsBold">ВЫ ПОЧУВСТВУЕТЕ</span>
+                     <span class="font-poppinsSemiBold">ВЫСОКУЮ ЭФФЕКТИВНОСТЬ</span>
+                     <span>работы Вашего лендинга</span>
+                     <img class="w-24 h-24 self-center" src="../build/img/quality.png" alt="">
+                  </div>
                </div>
             </div>
          </section>
-         <section></section>
-         <section></section>
+         <section id="websites_section" class="flex justify-center pb-28">
+            <div class="container flex gap-x-5">
+               <div class="flex flex-col gap-y-10 items-center bg-indigo-200 pt-14 pb-10 text-center w-[896px] rounded-3xl">
+                  <h1 class="text-5xl text-center font-poppinsBold">Корпоративные сайты и сайты услуг</h1>
+                  <p class="font-poppinsSemiBold text-lg text-balance">
+                     Корпоративный веб-сайт представляет собой эффективный инструмент для развития вашего бизнеса. Он привлекает новых партнеров и клиентов, подчеркивая вашу экспертизу и качество предоставляемых продуктов и услуг. Создание стильного и функционального сайта способствует укреплению вашей репутации и формированию доверия у посетителей. Доверьтесь нам в создании вашего корпоративного сайта, и мы поможем вам достичь новых вершин в вашем бизнесе.
+                  </p>
+                  <div class="flex gap-x-28 text-xl">
+                     <span class="flex items-center bg-[url('../img/time.png')] bg-no-repeat pl-24 h-24">20 - 45 дней</span>
+                     <span class="flex items-center bg-[url('../img/coins.png')] bg-no-repeat pl-24  h-24">от 800$</span>
+                  </div>
+                  <a class="block rounded py-3 text-center neon-border neon-text w-[286px] h-[48px] text-xl uppercase" href="#footer">Заказать сайт
+                  </a>
+               </div>
+               <div class="w-[384px] flex flex-col justify-around">
+                  <img src="./img/web_img.png" alt="">
+                  <p class="text-indigo-800 text-center py-4 px-2 text-3xl font-poppinsBold uppercase neon-bg rounded-lg">самые современные решения для бизнеса</p>
+               </div>
+            </div>
+         </section>
+         <section id="stores_section" class="flex justify-center pb-28 gap-x-5">
+            <div class="container flex">
+               <div class="flex flex-col gap-y-10 items-center bg-indigo-200 pt-14 pb-10 text-center w-[896px] rounded-3xl">
+                  <h1 class="text-5xl text-center font-poppinsBold">Интернет магазины</h1>
+                  <p class="font-poppinsSemiBold text-lg text-balance">
+                     Разработка интернет-магазина представляет собой процесс написания нового или адаптации готового программного кода. Наша команда разработает интернет-магазины на всех популярных CMS - Worpress, Modx, Bitrix, Shopify, Magento и др или разработает проект любой сложности с нуля под Ваши критерии.
+                  </p>
+                  <div class="flex gap-x-28 text-xl">
+                     <span class="flex items-center bg-[url('../img/time.png')] bg-no-repeat pl-24 h-24">1 - 2 месяца</span>
+                     <span class="flex items-center bg-[url('../img/coins.png')] bg-no-repeat pl-24  h-24">от 1000$</span>
+                  </div>
+                  <a class="block rounded py-3 text-center neon-border neon-text w-[286px] h-[48px] text-xl uppercase" href="#footer">Заказать сайт
+                  </a>
+               </div>
+               <div class="w-[384px]">
+                  <img src="./img/shops_img.png" alt="">
+               </div>
+            </div>
+         </section>
     </main>
-    <footer></footer>
+    <footer id="footer" class="bg_footer flex justify-center pb-28">
+      <div class="container flex flex-col gap-y-20">
+         <div class="flex justify-between pt-20">
+            <div class="w-[412px] flex flex-col gap-y-10 text-center">
+               <p class="text-3xl font-poppinsBold text-indigo-300 uppercase border-2 rounded-2xl ring-2 ring-indigo-700 border-indigo-900 p-4">Один шаг и сайт Ваш - заполните заявку!</p>
+               <p class="text-2xl text-balance font-poppinsBold text-indigo-400">Оставьте ваши контакты и наш менеджер составит для вас индивидуальный план работ, а наша команда подготовит маркетинговый анализ Вашего бизнеса!
+               </p>
+               <nav class="flex justify-around" aria-label="main">
+                  <a class="block bg-contain h-12 w-12 bg-[url('../img/whatsapp.png')]" href=""></a>
+                  <a class="block bg-contain h-12 w-12 bg-[url('../img/telegram.png')]" href=""></a>
+                  <a class="block bg-contain h-12 w-12 bg-[url('../img/email.png')]" href=""></a>
+               </nav>
+            </div>
+            <div class="flex flex-col justify-between">
+               <form class="flex flex-col gap-y-10" action method="post">
+                  <div class="flex gap-x-20">
+                     <input class="min-w-72 bg-transparent border-violet-500 border rounded-md text-indigo-300 pt-2 pl-2" type="text" name="name" placeholder="Ваше имя">
+                     <input class="min-w-72 bg-transparent border-violet-500 border rounded-md text-indigo-300 pt-2 pl-2" type="number" name="phone" placeholder="Номер телефона">
+                  </div>
+                  <div class="flex gap-x-20">
+                     <input class="min-w-72 bg-transparent border-violet-500 border rounded-md text-indigo-300 pt-2 pl-2" type="url" name="url" placeholder="Ваш-сайт (если есть)">
+                     <div class=" text-indigo-400">
+                        <select class="min-w-72 bg-transparent border-violet-500 border rounded-md text-indigo-300 pt-2 pl-2" name="services" placeholder="Выберите услугу">
+                           <option value="">Выберите вид услуг</option>
+                           <option value="Лендинг">Лендинг</option>
+                           <option value="Корпоративный сайт">Корпоративный сайт</option>
+                           <option value="Интернет-магазин">Интернет-магазин</option>
+                        </select>
+                     </div>
+                  </div>
+                  <textarea class="bg-transparent border-violet-500 border rounded-md text-indigo-300 pt-1 pl-2 resize-none" name="textarea" rows="7" cols="20" placeholder="Введите дополнитульную информацию, если это необходимо..."></textarea>
+               </form>
+               <a class="block rounded py-3 text-center neon-border neon-text w-[286px] h-[48px] text-xl uppercase" href="#footer">Отправить заявку
+               </a>
+            </div>
+         </div>
+      </div>
+    </footer>
 </body>
 </html>
